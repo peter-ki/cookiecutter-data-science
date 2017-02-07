@@ -14,6 +14,8 @@ def main(input_filepath, output_filepath):
     """
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
+    
+    # do data prep
 
 
 if __name__ == '__main__':
@@ -27,4 +29,4 @@ if __name__ == '__main__':
     # load up the .env entries as environment variables
     load_dotenv(find_dotenv())
 
-    main()
+    main(input_filepath, output_filepath)
